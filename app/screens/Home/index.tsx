@@ -29,10 +29,10 @@ interface RecipeDetailsForm {
 const RecipeDetailsSchema = Yup.object().shape({
   recipeName: Yup.string().required('Name Required'),
   dishType: Yup.array()
-    .length(1, 'Please select at least one ')
+    .min(1, 'Please select at least one ')
     .required('Dish Type Required'),
   cuisineType: Yup.array()
-    .length(1, 'Please select at least one ')
+    .min(1, 'Please select at least one ')
     .required('Cuisine Type Required'),
   recipeType: Yup.string().required('Recipe Type Required'),
 });
