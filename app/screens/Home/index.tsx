@@ -58,11 +58,11 @@ const StyledCard = styled(Card)`
 
 const Home: React.FC = () => {
   const initialValues: RecipeDetailsForm = {
-    recipeName: '1',
+    recipeName: '',
     dishType: [],
     occasionType: [],
     cuisineType: [],
-    recipeType: '1',
+    recipeType: '',
   };
 
   const dispatch = useDispatch();
